@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    types: [opened, closed]
+  workflow_dispatch:
 jobs:
     deploy:
       runs-on: ubuntu-latest
